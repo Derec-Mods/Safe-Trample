@@ -5,7 +5,7 @@ import org.bukkit.plugin.java.JavaPlugin
 class SafeTrample : JavaPlugin() {
 
     override fun onEnable() {
-        // Plugin startup logic
+        server.pluginManager.registerEvents(TrampleListener(), this)
     }
 
     override fun onDisable() {
