@@ -8,6 +8,5 @@ class TrampleListener : Listener {
 
     @EventHandler
     fun onInteract(event: PlayerInteractEvent) {
-        // Trample handling added in a later commit.
     }
 }
