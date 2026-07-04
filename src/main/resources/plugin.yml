@@ -1,0 +1,8 @@
+name: Safe Trample
+version: '1.0.0.0'
+main: io.github.derexxd.safeTrample.SafeTrample
+api-version: '1.18'
+prefix: DerexXD
+authors: [ DerexXD ]
+description: Prevent crops from being trampled via feather falling boots.
+website: https://www.derekchen.dev/
