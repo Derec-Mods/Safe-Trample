@@ -1,6 +1,7 @@
 package io.github.derexxd.safeTrample
 
 import org.bukkit.Material
+import org.bukkit.enchantments.Enchantment
 import org.bukkit.event.EventHandler
 import org.bukkit.event.Listener
 import org.bukkit.event.block.Action
@@ -10,14 +11,9 @@ class TrampleListener : Listener {
 
     @EventHandler
     fun onInteract(event: PlayerInteractEvent) {
-        if (event.action != Action.PHYSICAL) {
-            return
-        }
-
-        val block = event.clickedBlock
-        if (block == null || block.type != Material.FARMLAND) {
-            return
-        }
+        if (event.action != Action.PHYSICAL) return
+        if (event.clickedBlock?.type != Material.FARMLAND) return
+        if (event.player.inventory.boots?.containsEnchantment(Enchantment.PROTECTION_FALL) != true) return
 
         event.isCancelled = true
     }
