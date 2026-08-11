@@ -1,4 +1,4 @@
-name: Safe Trample
+name: SafeTrample
 version: '${version}'
 main: io.github.derexxd.safeTrample.SafeTrample
 api-version: '1.18'
