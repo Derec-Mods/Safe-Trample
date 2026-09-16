@@ -4,6 +4,7 @@
   "package": "io.github.derexxd.safetrample.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
+    "FarmlandBlockMixin"
   ],
   "injectors": {
     "defaultRequire": 1
