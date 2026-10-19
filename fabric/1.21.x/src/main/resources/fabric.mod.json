@@ -21,7 +21,7 @@
     "safetrample.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=${loader_version}",
+    "fabricloader": ">=0.15.11",
     "minecraft": ">=1.21 <1.22"
   }
 }
